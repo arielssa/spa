@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+.header {
+    height: 70px;
+    background-color: #A3A656;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body {
+    margin: 0px auto;
+}
+.header .menu-header {
+   display: inline-block;
+   padding-left: 70px;
+}
+.menu-header ul {
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+}
+ul {
+    margin: 0px;
+}
+.menu-header ul li {
+    display: inline-block;
+    padding-right: 43px;
+}
+.menu-header ul li a {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Inter, Regular;
+    color: black;
+}
+.menu-header ul li a:hover{
+    color: #FFFF00
+}
+.opciones {   
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.opciones .idioma {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.opciones .idioma p {
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Inter, Regular;
+}
+.opciones .idioma img {
+    height: 40px;
+    width: 50px;
+}
+.opciones .cuenta {
+    float: right;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+}
+.opciones .cuenta img {
+    width: 46px;
+    height: 46px;
+}
+.opciones .cuenta p {
+    padding-left: 10px;
+    padding-right: 30px;
+    font-size: 14px;
+    font-family: Inter, Regular;
+}
+.opciones .selector-idioma {
+    float: right;
+    padding: 0px 10px;
+}
+/*Main*/
+.titulos {
+    position: relative  ; 
+    height: 100vh;
+    width: 100%;
+}
+.titulos .imagen img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.titulos .titulo-mayor {
+    display: flex;
+    position: relative;
+    font-family: Romanesco, Regular;
+    font-size: 96px;
+    padding-left: 187px;
+    padding-top: 200px;
+}
+.titulos .titulo-mayor p {
+    margin: 0px;
+}
+.titulos .titulo-menor {
+    display: flex;
+    position: relative;
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    padding: 0px 187px;
+    width: 600px;
+}
+.titulos .titulo-menor p {
+    margin-top: 32px;
+}
+/*Reserva*/
+.reserva {
+    display: flex;
+    padding-top: 0px;
+    height: 100px;
+    background-color: #F2F6F6;
+    align-items: center;
+    justify-content:center;
+}
+.reserva .cita {
+    display: flex;
+    margin-right: 50px;
+}
+.reserva .codigo {
+    display: flex;
+}
+.reserva .cita p {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.reserva .cita input {
+    border-radius: 15px;
+    border: 0px;
+}
+.reserva .codigo p {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.reserva .codigo input {
+    border-radius: 15px;
+    border: 0px;
+    text-align: center;
+}
+.reserva .codigo input::placeholder {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    color: #9E9A9A;
+    text-transform: uppercase;
+}
+/*Masajes*/
+.masajes {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+.masajes .pies {
+    margin-right: 134px;
+}
+.masajes .relajante {
+    margin-right: 134px;
+}
+.masajes .pies .titulo {
+    background-color: #A3A656;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    padding: 15px 0px;
+}
+.masajes .pies .titulo p {
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    color: white;
+    margin: 0px;
+}
+.masajes .pies .descripcion {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    width: 350px;
+}
+.masajes .pies .precio-reserva {
+    display: flex;
+    justify-content: space-between;
+}
+.masajes .pies .precio-reserva p {
+    font-family: Inter, Bold;
+    font-size: 32px;
+    margin: 0px;
+}
+.masajes .pies .precio-reserva button {
+    background-color: #A3A656;
+    border-radius: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Inter, Regular;
+    font-size: 16px;
+    padding: 0px 30px;
+    border: 0px;
+}
+.masajes .pies .precio-reserva button:hover {
+    background-color: #384001;
+}
+.masajes .relajante .titulo {
+    background-color: #A3A656;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    padding: 15px 0px;
+}
+.masajes .relajante .titulo p {
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    color: white;
+    margin: 0px;
+}
+.masajes .relajante .descripcion {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    width: 350px;
+}
+.masajes .relajante .precio-reserva {
+    display: flex;
+    justify-content: space-between;
+}
+.masajes .relajante .precio-reserva p {
+    font-family: Inter, Bold;
+    font-size: 32px;
+    margin: 0px;
+}
+.masajes .relajante .precio-reserva button {
+    background-color: #A3A656;
+    border-radius: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Inter, Regular;
+    font-size: 16px;
+    padding: 0px 30px;
+    border: 0px;
+}
+.masajes .relajante .precio-reserva button:hover {
+    background-color: #384001;
+}
+.masajes .bambu .titulo {
+    background-color: #A3A656;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    padding: 15px 0px;
+}
+.masajes .bambu .titulo p {
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    color: white;
+    margin: 0px;
+}
+.masajes .bambu .descripcion {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    width: 350px;
+}
+.masajes .bambu .precio-reserva {
+    display: flex;
+    justify-content: space-between;
+}
+.masajes .bambu .precio-reserva p {
+    font-family: Inter, Bold;
+    font-size: 32px;
+    margin: 0px;
+}
+.masajes .bambu .precio-reserva button {
+    background-color: #A3A656;
+    border-radius: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Inter, Regular;
+    font-size: 16px;
+    padding: 0px 30px;
+    border: 0px;
+}
+.masajes .bambu .precio-reserva button:hover {
+    background-color: #384001;
+}
+/*Planes*/
+.planes {
+    display: flex;
+    background-color: #F2F6F6;
+    height: 770px;
+    justify-content: space-around;
+    align-items: center;
+}
+.planes .gold {
+    display: inline-block;
+    text-align: center;
+}
+.planes .premium {
+    display: inline-block;
+    text-align: center;
+}
+.planes .plate {
+    display: inline-block;
+    text-align: center;
+}
+.planes .gold .circulo {
+    display: flex;
+    width: 233px;
+    height: 233px;
+    border: 12px solid #384001;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+}
+.planes .gold .condiciones button {
+    background-color: #A3A656;
+    border-radius: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Inter, Regular;
+    font-size: 16px;
+    padding: 15px 60px;
+    border: 0px;
+}
+.planes .gold .condiciones button:hover {
+    background-color: #384001;
+}
+.planes .gold p {
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+.planes .gold .beneficios {
+    text-align: justify;
+    margin-top: 20px;
+}
+.planes .gold .beneficios ul li {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.planes .premium .circulo {
+    display: flex;
+    width: 233px;
+    height: 233px;
+    border: 12px solid #384001;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+}
+.planes .premium .condiciones button {
+    background-color: #A3A656;
+    border-radius: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Inter, Regular;
+    font-size: 16px;
+    padding: 15px 60px;
+    border: 0px;
+}
+.planes .premium .condiciones button:hover {
+    background-color: #384001;
+}
+.planes .premium p {
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+.planes .premium .beneficios {
+    text-align: justify;
+    margin-top: 20px;
+}
+.planes .premium .beneficios ul li {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.planes .plate .circulo {
+    display: flex;
+    width: 233px;
+    height: 233px;
+    border: 12px solid #384001;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+}
+.planes .plate .condiciones button {
+    background-color: #A3A656;
+    border-radius: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Inter, Regular;
+    font-size: 16px;
+    padding: 15px 60px;
+    border: 0px;
+}
+.planes .plate .condiciones button:hover {
+    background-color: #384001;
+}
+.planes .plate p {
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+.planes .plate .beneficios {
+    text-align: justify;
+    margin-top: 20px;
+}
+.planes .plate .beneficios ul li {
+    font-family: Inter, Regular;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/*Footer*/
+.footer {
+    height: 97px;
+    background-color: #384001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .menu-footer {
+    display: inline-block;
+    padding-left: 70px;
+ }
+ .footer .menu-footer ul {
+     list-style-type: none;
+     padding: 0px;
+        display: inline-block;
+ }
+ .footer ul {
+     margin: 0px;
+ }
+ .footer .menu-footer ul li {
+     display: inline-block;
+     padding-right: 70px;
+ }
+ .footer .menu-footer ul li a {
+     display: flex;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 16px;
+     font-family: Inter, Regular;
+     color: #A3A656;
+ }
+ .footer .menu-footer ul li a:hover {
+     color: #FFFF00
+ }
+ .footer .redes-sociales {
+    display: flex;
+    align-items: center;
+ }
+ .footer .redes-sociales p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Inter, Regular;
+    color: #A3A656;
+}
+.footer .redes-sociales .facebook{
+    margin: 0px 40px;
+}
+.footer .redes-sociales .twitter{
+    margin-right: 40px;
+}
+.footer .redes-sociales .youtube{
+    margin-right: 40px;
+}
