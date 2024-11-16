@@ -439,7 +439,7 @@ ul {
  }
  .footer .menu-footer ul li {
      display: inline-block;
-     padding-right: 70px;
+     padding-right: 60px;
  }
  .footer .menu-footer ul li a {
      display: flex;
