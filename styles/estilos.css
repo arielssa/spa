@@ -136,6 +136,7 @@ ul {
 .reserva .cita input {
     border-radius: 15px;
     border: 0px;
+    width: 275px;
 }
 .reserva .codigo p {
     font-family: Inter, Regular;
@@ -291,20 +292,31 @@ ul {
     height: 770px;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
-.planes .gold {
-    display: inline-block;
+.planes .titulo {
+    font-family: Inter, SemiBold;
+    font-size: 32px;
+    display: flex;
+    margin-top: 40px;
+}
+.planes .opciones {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.planes .opciones .gold p {
     text-align: center;
 }
-.planes .premium {
-    display: inline-block;
+.planes .opciones .premium p {
     text-align: center;
 }
-.planes .plate {
-    display: inline-block;
+.planes .opciones .plate p {
     text-align: center;
 }
-.planes .gold .circulo {
+.planes .opciones .gold .circulo {
     display: flex;
     width: 233px;
     height: 233px;
@@ -314,7 +326,7 @@ ul {
     border-radius: 50%;
     background-color: white;
 }
-.planes .gold .condiciones button {
+.planes .opciones .gold .condiciones button {
     background-color: #A3A656;
     border-radius: 35px;
     color: white;
@@ -324,25 +336,25 @@ ul {
     padding: 15px 60px;
     border: 0px;
 }
-.planes .gold .condiciones button:hover {
+.planes .opciones .gold .condiciones button:hover {
     background-color: #384001;
 }
-.planes .gold p {
+.planes .opciones .gold p {
     font-family: Inter, SemiBold;
     font-size: 32px;
     text-transform: uppercase;
     margin-top: 0px;
 }
-.planes .gold .beneficios {
+.planes .opciones .gold .beneficios {
     text-align: justify;
     margin-top: 20px;
 }
-.planes .gold .beneficios ul li {
+.planes .opciones .gold .beneficios ul li {
     font-family: Inter, Regular;
     font-size: 16px;
     margin-top: 10px;
 }
-.planes .premium .circulo {
+.planes .opciones .premium .circulo {
     display: flex;
     width: 233px;
     height: 233px;
@@ -352,7 +364,7 @@ ul {
     border-radius: 50%;
     background-color: white;
 }
-.planes .premium .condiciones button {
+.planes .opciones .premium .condiciones button {
     background-color: #A3A656;
     border-radius: 35px;
     color: white;
@@ -362,25 +374,25 @@ ul {
     padding: 15px 60px;
     border: 0px;
 }
-.planes .premium .condiciones button:hover {
+.planes .opciones .premium .condiciones button:hover {
     background-color: #384001;
 }
-.planes .premium p {
+.planes .opciones .premium p {
     font-family: Inter, SemiBold;
     font-size: 32px;
     text-transform: uppercase;
     margin-top: 0px;
 }
-.planes .premium .beneficios {
+.planes .opciones .premium .beneficios {
     text-align: justify;
     margin-top: 20px;
 }
-.planes .premium .beneficios ul li {
+.planes .opciones .premium .beneficios ul li {
     font-family: Inter, Regular;
     font-size: 16px;
     margin-top: 10px;
 }
-.planes .plate .circulo {
+.planes .opciones .plate .circulo {
     display: flex;
     width: 233px;
     height: 233px;
@@ -390,7 +402,7 @@ ul {
     border-radius: 50%;
     background-color: white;
 }
-.planes .plate .condiciones button {
+.planes .opciones .plate .condiciones button {
     background-color: #A3A656;
     border-radius: 35px;
     color: white;
@@ -400,23 +412,26 @@ ul {
     padding: 15px 60px;
     border: 0px;
 }
-.planes .plate .condiciones button:hover {
+.planes .opciones .plate .condiciones button:hover {
     background-color: #384001;
 }
-.planes .plate p {
+.planes .opciones .plate p {
     font-family: Inter, SemiBold;
     font-size: 32px;
     text-transform: uppercase;
     margin-top: 0px;
 }
-.planes .plate .beneficios {
+.planes .opciones .plate .beneficios {
     text-align: justify;
     margin-top: 20px;
 }
-.planes .plate .beneficios ul li {
+.planes .opciones .plate .beneficios ul li {
     font-family: Inter, Regular;
     font-size: 16px;
     margin-top: 10px;
+}
+#li1, #li2, #li3 {
+    visibility: hidden;
 }
 /*Footer*/
 .footer {
